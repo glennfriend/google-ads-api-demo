@@ -1,0 +1,53 @@
+{
+    "name": "googleads/google-ads-php",
+    "author": "Google LLC",
+    "description": "Google Ads API client for PHP (create at 2020-03-06",
+    "require": {
+        "php": ">=7.1",
+        "google/gax": "^1.0.2",
+        "ulrichsg/getopt-php": "^3.2.2",
+        "monolog/monolog": "^1.23.0 || ^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.5",
+        "squizlabs/php_codesniffer": "^2.9 || ^3.2",
+        "ext-bcmath": "*",
+        "react/http": "^0.8.3"
+    },
+    "suggest": {
+        "php-64bit": ">=7.1",
+        "react/http": "To run the AuthenticateInWebApplication.php example",
+        "ext-protobuf": "For better performance, use the C implementation of Protobuf",
+        "google/protobuf": "In case the C implementation of Protobuf is not suitable, use the PHP one"
+    },
+    "license": "Apache-2.0",
+    "autoload": {
+        "psr-4": {
+            "Google\\Ads\\GoogleAds\\": "src/Google/Ads/GoogleAds",
+            "GPBMetadata\\Google\\Ads\\GoogleAds\\": "metadata/Google/Ads/GoogleAds",
+            "Google\\Ads\\GoogleAds\\Examples\\": "examples"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Google\\": "src/Google/Ads/GoogleAds/Util/Testing/Google",
+            "GPBMetadata\\": "src/Google/Ads/GoogleAds/Util/Testing/metadata"
+        }
+    },
+    "authors": [
+        {
+            "name": "Google",
+            "homepage": "https://github.com/googleads/google-ads-php/contributors"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "prefer-stable": true,
+    "minimum-stability": "dev"
+}
